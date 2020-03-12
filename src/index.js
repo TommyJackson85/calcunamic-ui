@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-
+import App from './components/App.js'
 import styles from './styles.css'
 
 export default class ExampleComponent extends Component {
@@ -15,7 +15,7 @@ export default class ExampleComponent extends Component {
 
     return (
       <div className={styles.test}>
-        Example Component: {text}
+        <App />
       </div>
     )
   }
