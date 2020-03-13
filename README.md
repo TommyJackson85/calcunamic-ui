@@ -22,12 +22,12 @@ npm install --save calcunamic-ui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'calcunamic-ui'
+import Calculator from 'calcunamic-ui'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <Calculator />
     )
   }
 }

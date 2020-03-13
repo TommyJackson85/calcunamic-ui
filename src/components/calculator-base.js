@@ -1,16 +1,16 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
+import styles from './styles.css'
 
 export default class CalculatorBase extends Component {
     static propTypes = {
         name: PropTypes.string,
-        width: PropTypes.string
     };
     render() {
 
-        const { name, width } = this.props;
+        const { name } = this.props;
         return (
-            <div style={{width: width}} >
+            <div className={styles.box}>
                 <h1>{ name }</h1>
             </div>
         );
