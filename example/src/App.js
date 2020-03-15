@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-
-import ExampleComponent from 'calcunamic-ui'
+import { CalculatorBase } from 'calcunamic-ui'
 
 export default class App extends Component {
   render () {
-    return (
+    return ( 
       <div>
-        <h1>Example 1</h1>
-        <ExampleComponent text='Modern React component module' />
+        <form></form>
+        <CalculatorBase />
       </div>
     )
   }
