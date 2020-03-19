@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import App from './App.js'
-import styles from './styles.css'
 export { CalculatorBase } from './calculator-base.js';
 export { Modal } from './modal.js';
 

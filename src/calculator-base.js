@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import styles from './styles.css'
 
 export class CalculatorBase extends Component {
     static propTypes = {
