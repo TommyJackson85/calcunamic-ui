@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import App from './App.js'
 export { CalculatorBase } from './calculator-base.js';
 export { Modal } from './modal.js';
+export { Select } from './Select.js';
 
 /*
 export class CalculatorBase extends Component {
