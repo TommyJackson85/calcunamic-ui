@@ -25,7 +25,7 @@ export default class App extends Component {
   handleSelectChange(e) {
     this.setState({
       selected: e.target.value,
-      total_cost: this.state.item_cost * eval(e.target.value),
+      total_cost: this.state.item_cost * e.target.value,
     });
   }
   
@@ -54,7 +54,12 @@ export default class App extends Component {
         <Modal 
           handleClose={this.hideCalculator} 
           show={this.state.showModal}>
-          <CalculatorBase />
+          <section>
+            <CalculatorBase 
+              name="Access your budget below"
+              item_cost={this.state.item_cost}
+              item_amount={this.state.selected} />
+          </section>
         </Modal>
       </div>
     )
