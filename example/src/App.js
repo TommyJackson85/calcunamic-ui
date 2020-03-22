@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { CalculatorBase, Modal } from 'calcunamic-ui'
+import { CalculatorBase, Modal, BudgetMarker } from 'calcunamic-ui'
 
 //true
 
@@ -35,7 +35,7 @@ export default class App extends Component {
         <form onSubmit={this.handleSubmit}>
          <br />
           <legend>Book: Harry Potter Vol 1</legend>
-          <p>Cost: { this.state.item_cost }</p>
+          <p>Cost: ${ this.state.item_cost }</p>
           <p>
             <label>Select amount of copies</label>
             <select value={this.state.selected} onChange={this.handleSelectChange}>
@@ -47,7 +47,8 @@ export default class App extends Component {
             </select>
             { this.state.selected }
           </p>
-          <p>Total cost: {this.state.total_cost}</p>
+          <hr />
+          <p>Total cost: ${this.state.total_cost}</p>
           <p>Unsure if this is correct amount?</p>
           <button type="button" onClick={this.showCalculator}>Asses within Budget</button>
         </form>
